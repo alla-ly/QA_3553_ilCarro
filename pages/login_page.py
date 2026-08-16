@@ -1,4 +1,5 @@
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.devtools.v149.debugger import pause
 
 
 class LoginPage:
@@ -6,7 +7,7 @@ class LoginPage:
     LOGIN_LINK = (By.CSS_SELECTOR,"[href='/login']")
     EMAIL_INPUT = (By.CSS_SELECTOR,"[name='username']")
     PASSWORD_INPUT = (By.CSS_SELECTOR,"[name='password']")
-    LOGIN_BTN = (By.XPATH,"//*[@class='btn']")
+    LOGIN_BTN = (By.XPATH, "//*[@class='btn btn--primary']")
     LOG_OUT_BTN = (By.XPATH,"//button[text()='Log out']")
 
     def __init__(self, driver):

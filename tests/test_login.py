@@ -1,3 +1,4 @@
+
 from pages.login_page import LoginPage
 
 VALID_EMAIL = "anna123456@gmail.com"
@@ -10,4 +11,6 @@ def test_login_success(driver):
     login_page.fill_email(VALID_EMAIL)
     login_page.fill_password(VALID_PASSWORD)
     login_page.submit_login()
+
+
 
