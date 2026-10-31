@@ -3,10 +3,11 @@
 __pycache__/
 *.py[codz]
 *$py.class
-
+logs/
 # C extensions
 *.so
-
+allure-results/
+allure-report/
 # Distribution / packaging
 .Python
 build/
@@ -32,7 +33,8 @@ MANIFEST
 #   before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
-
+.env
+*.png
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
